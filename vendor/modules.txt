@@ -54,9 +54,6 @@ github.com/kisielk/errcheck
 github.com/kisielk/errcheck/internal/errcheck
 # github.com/matttproud/golang_protobuf_extensions v1.0.1
 github.com/matttproud/golang_protobuf_extensions/pbutil
-# github.com/mbndr/figlet4go v0.0.0-20190224160619-d6cef5b186ea
-## explicit
-github.com/mbndr/figlet4go
 # github.com/nxadm/tail v1.4.4
 github.com/nxadm/tail
 github.com/nxadm/tail/ratelimiter
