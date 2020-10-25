@@ -33,6 +33,6 @@ func FigletizeText(ctx workflow.Context, inputText string) (string, error) {
 		return "", err
 	}
 
-	workflow.GetLogger(ctx).Info("FigletizeText workflow done", zap.String("Figleted text", figletedText))
+	workflow.GetLogger(ctx).Info("FigletizeText workflow done")
 	return figletedText, nil
 }
