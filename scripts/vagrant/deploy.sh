@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 set -eux -o pipefail
 
+# Set the launch context of the script
+export CONTEXT_DIR=${CONTEXT_DIR:-"/vagrant"}
+
 # Load the standard environment
 source /home/vagrant/.hashicorprc
 
@@ -38,7 +41,7 @@ export GOROOT=${work_dir}/go
 go version
 
 # Build the service
-pushd /vagrant/cmd/figlet-cadence-worker
+pushd ${CONTEXT_DIR}/cmd/figlet-cadence-worker
   git rev-parse HEAD > ${work_dir}/git_sha
   go build
 
